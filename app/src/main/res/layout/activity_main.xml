@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bodytechnix.fitnesssensors.MainActivity"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPreMade"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="16dp"
+                android:onClick="openPreMade"
+                android:text="@string/premade"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:onClick="openNew1"
+                android:text="@string/txtNew"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPreMade"/>
+
+            <Button
+                android:id="@+id/btnCurrent"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnNew"
+                android:text="@string/current"
+                android:textAllCaps="false"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnSaved"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCurrent"
+                android:text="@string/saved"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="131dp"
+                tools:layout_editor_absoluteY="257dp"/>
+
+            <Button
+                android:id="@+id/btnAddDevice"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSaved"
+                android:text="@string/add_device"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="332dp"/>
+
+            <Button
+                android:id="@+id/btnMetrics"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAddDevice"
+                android:text="@string/metrics"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="131dp"
+                tools:layout_editor_absoluteY="405dp"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation"/>
+
+</LinearLayout>

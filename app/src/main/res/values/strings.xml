@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FitnessSensors</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_pre_made">PreMade</string>
+    <string name="premade">PreMade</string>
+    <string name="txtNew">New</string>
+    <string name="current">Current</string>
+    <string name="saved">Saved</string>
+    <string name="add_device">Add Device</string>
+    <string name="metrics">Metrics</string>
+    <string name="title_activity_leg">Leg</string>
+    <string name="title_activity_squat">Squat</string>
+    <string name="title_activity_new2">Lower</string>
+    <string name="title_activity_new_one">New</string>
+    <string name="title_activity_new3_quad">Quad</string>
+    <string name="title_activity_new4_squat">Squat</string>
+</resources>

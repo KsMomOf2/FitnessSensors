@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bodytechnix.fitnesssensors.PreMade">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnChest"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:text="Chest"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnLeg"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:onClick="openLeg"
+            android:text="Leg"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnChest"/>
+
+        <Button
+            android:id="@+id/btnSoccer"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLeg"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:text="Soccer"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <Button
+        android:id="@+id/btnKangaroo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSoccer"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:text="Kangaroo"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnEtc"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnKangaroo"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:text="Etc"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation"/>
+
+</LinearLayout>

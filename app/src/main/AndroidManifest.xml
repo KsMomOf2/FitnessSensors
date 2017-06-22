@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bodytechnix.fitnesssensors">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreMade"
+            android:label="@string/title_activity_pre_made"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".Leg"
+            android:label="@string/title_activity_leg"
+            android:parentActivityName=".PreMade">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.PreMade"/>
+        </activity>
+        <activity
+            android:name=".Squat"
+            android:label="@string/title_activity_squat"
+            android:parentActivityName=".Leg">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.Leg"/>
+        </activity>
+        <activity
+            android:name=".New2Lower"
+            android:label="@string/title_activity_new2"
+            android:parentActivityName=".New1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.New1"/>
+        </activity>
+        <activity
+            android:name=".New1"
+            android:label="@string/title_activity_new_one"
+            android:parentActivityName=".PreMade">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.PreMade"/>
+        </activity>
+        <activity
+            android:name=".New3Quad"
+            android:label="@string/title_activity_new3_quad"
+            android:parentActivityName=".New1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.New1"/>
+        </activity>
+        <activity
+            android:name=".New4Squat"
+            android:label="@string/title_activity_new4_squat"
+            android:parentActivityName=".New3Quad">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.New3Quad"/>
+        </activity>
+    </application>
+
+</manifest>
