@@ -74,6 +74,62 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bodytechnix.fitnesssensors.New3Quad"/>
         </activity>
+        <activity
+            android:name=".Current1"
+            android:label="@string/title_activity_current1"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.PreMade"/>
+        </activity>
+        <activity
+            android:name=".Current2Squat"
+            android:label="@string/title_activity_current2"
+            android:parentActivityName=".Current1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.Current1"/>
+        </activity>
+        <activity
+            android:name=".Saved1"
+            android:label="@string/title_activity_saved1"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.PreMade"/>
+        </activity>
+        <activity
+            android:name=".Saved2MonWed"
+            android:label="@string/title_activity_saved2"
+            android:parentActivityName=".Saved1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.Saved1"/>
+        </activity>
+        <activity
+            android:name=".Saved3Squat"
+            android:label="@string/title_activity_saved3"
+            android:parentActivityName=".Saved2MonWed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.Saved2MonWed"/>
+        </activity>
+        <activity
+            android:name=".AddDevice"
+            android:label="@string/title_activity_add_device"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".AddKneeSleeve"
+            android:label="@string/title_activity_add_knee_sleeve"
+            android:parentActivityName=".AddDevice">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bodytechnix.fitnesssensors.AddDevice"/>
+        </activity>
     </application>
 
 </manifest>

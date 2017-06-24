@@ -57,7 +57,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/btnNew"
                 android:text="@string/current"
                 android:textAllCaps="false"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:onClick="openCurrent1"/>
 
             <Button
                 android:id="@+id/btnSaved"
@@ -71,7 +72,8 @@
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="131dp"
-                tools:layout_editor_absoluteY="257dp"/>
+                tools:layout_editor_absoluteY="257dp"
+                android:onClick="openSaved1"/>
 
             <Button
                 android:id="@+id/btnAddDevice"
@@ -85,7 +87,8 @@
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="114dp"
-                tools:layout_editor_absoluteY="332dp"/>
+                tools:layout_editor_absoluteY="332dp"
+                android:onClick="openAddDevice"/>
 
             <Button
                 android:id="@+id/btnMetrics"
@@ -99,7 +102,8 @@
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="131dp"
-                tools:layout_editor_absoluteY="405dp"/>
+                tools:layout_editor_absoluteY="405dp"
+                android:onClick="openMetrics"/>
         </android.support.constraint.ConstraintLayout>
 
     </FrameLayout>

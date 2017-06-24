@@ -16,4 +16,11 @@
     <string name="title_activity_new_one">New</string>
     <string name="title_activity_new3_quad">Quad</string>
     <string name="title_activity_new4_squat">Squat</string>
+    <string name="title_activity_current1">Current</string>
+    <string name="title_activity_current2">Squat</string>
+    <string name="title_activity_saved1">Saved</string>
+    <string name="title_activity_saved2">Mon/Wed</string>
+    <string name="title_activity_saved3">Squat</string>
+    <string name="title_activity_add_device">Add Device</string>
+    <string name="title_activity_add_knee_sleeve">Knee Sleeve</string>
 </resources>

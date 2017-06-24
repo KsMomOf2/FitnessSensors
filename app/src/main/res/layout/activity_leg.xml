@@ -92,6 +92,47 @@
             android:textAllCaps="false"
             android:textSize="18sp"/>
 
+        <CheckBox
+            android:id="@+id/cbxRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginStart="40dp"
+            android:checked="true"
+            app:layout_constraintBottom_toTopOf="@id/btnSquat"
+            app:layout_constraintLeft_toRightOf="@id/btnRun"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="23dp"/>
+        <CheckBox
+            android:id="@+id/cbxSquat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            app:layout_constraintBottom_toTopOf="@id/btnLunge"
+            app:layout_constraintLeft_toLeftOf="@id/cbxRun"
+            android:layout_marginBottom="35dp"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="23dp"/>
+        <CheckBox
+            android:id="@+id/cbxLunge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            app:layout_constraintBottom_toTopOf="@id/btnBoxJump"
+            app:layout_constraintLeft_toLeftOf="@id/cbxRun"
+            android:layout_marginBottom="35dp"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="23dp"/>
+        <CheckBox
+            android:id="@+id/cbxBoxJump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            app:layout_constraintBottom_toTopOf="@id/btnEtc2"
+            app:layout_constraintLeft_toLeftOf="@id/cbxRun"
+            android:layout_marginBottom="35dp"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="23dp"/>
     </android.support.constraint.ConstraintLayout>
 
     <android.support.design.widget.BottomNavigationView

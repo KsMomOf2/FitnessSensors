@@ -51,4 +51,17 @@ public class MainActivity extends AppCompatActivity {
     Intent intent = new Intent(this, New1.class);
     startActivity(intent);
   }
+  public void openCurrent1(View view) {
+    Intent intent = new Intent(this, Current1.class);
+    startActivity(intent);
+  }
+  public void openSaved1(View view) {
+    Intent intent = new Intent(this, Saved1.class);
+    startActivity(intent);
+  }
+  public void openAddDevice(View view) {
+    Intent intent = new Intent(this, AddDevice.class);
+    startActivity(intent);
+  }
+
 }
