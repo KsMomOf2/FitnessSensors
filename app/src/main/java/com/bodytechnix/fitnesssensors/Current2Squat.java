@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class Current2Squat extends AppCompatActivity {
-
+/*
   private TextView mTextMessage;
 
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -31,15 +31,16 @@ public class Current2Squat extends AppCompatActivity {
     }
 
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_current2squat);
-
+/*
     mTextMessage = (TextView) findViewById(R.id.message);
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+ */
   }
 
 }

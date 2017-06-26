@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class AddNewDevice extends AppCompatActivity {
-
+/*
   private TextView mTextMessage;
 
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -33,15 +33,16 @@ public class AddNewDevice extends AppCompatActivity {
     }
 
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_add_new_device);
-
+/*
     mTextMessage = (TextView) findViewById(R.id.message);
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+ */
   }
 
   public void openAddKneeSleeve(View view) {

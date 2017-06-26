@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class PreMade extends AppCompatActivity {
-
+/*
   private TextView mTextMessage;
 
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -33,15 +33,17 @@ public class PreMade extends AppCompatActivity {
     }
 
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_pre_made);
-
+/*
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+ */
   }
+
   public void openLeg(View view) {
     Intent intent = new Intent(this, Leg.class);
     startActivity(intent);

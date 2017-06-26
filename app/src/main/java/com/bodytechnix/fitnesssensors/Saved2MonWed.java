@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Saved2MonWed extends AppCompatActivity {
-
+/*
   private TextView mTextMessage;
 
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -33,16 +33,16 @@ public class Saved2MonWed extends AppCompatActivity {
     }
 
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_saved2monwed);
-
+/*
     mTextMessage = (TextView) findViewById(R.id.message);
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-  }
+ */ }
   public void openSavedSquat(View view) {
     Intent intent = new Intent(this, Saved3Squat.class);
     startActivity(intent);

@@ -134,7 +134,7 @@
             tools:layout_editor_absoluteX="289dp"
             tools:layout_editor_absoluteY="23dp"/>
     </android.support.constraint.ConstraintLayout>
-
+<!--
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -142,5 +142,5 @@
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation"/>
-
+-->
 </LinearLayout>

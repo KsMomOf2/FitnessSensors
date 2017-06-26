@@ -93,7 +93,7 @@
             android:textSize="18sp"/>
 
     </android.support.constraint.ConstraintLayout>
-
+<!--
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -101,5 +101,5 @@
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation"/>
-
+-->
 </LinearLayout>

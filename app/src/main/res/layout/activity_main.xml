@@ -118,7 +118,8 @@
             <FrameLayout
                 android:id="@+id/lytMenu"
                 android:layout_width="410dp"
-                android:layout_height="60dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
                 android:elevation="1dp"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -129,12 +130,11 @@
                     android:id="@+id/btnMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="175dp"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="openHelp"
                     android:text="Help"
-                    android:textSize="30dp"
-                    android:onClick="openHelp"/>
+                    android:textSize="30dp"/>
 
             </FrameLayout>
 

@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class AddPair extends AppCompatActivity {
 
-  private TextView mTextMessage;
+//  private TextView mTextMessage;
 
   private ListView.OnItemClickListener mOnItemClickListener = new ListView.OnItemClickListener() {
     @Override
@@ -26,7 +26,7 @@ public class AddPair extends AppCompatActivity {
       Toast.makeText(view.getContext(), devices.getItem(position) + " paired", Toast.LENGTH_LONG).show();
     }
    };
-
+/*
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
           = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -46,7 +46,7 @@ public class AddPair extends AppCompatActivity {
       return false;
     }
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -57,9 +57,10 @@ public class AddPair extends AppCompatActivity {
     ListView lv = (ListView) findViewById(R.id.lstDevices);
     lv.setAdapter(adapter);
     lv.setOnItemClickListener(mOnItemClickListener);
-
+/*
     mTextMessage = (TextView) findViewById(R.id.message);
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+ */
   }
 }

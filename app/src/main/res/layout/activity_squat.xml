@@ -31,7 +31,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
+          <TextView
             android:id="@+id/txtSetNum"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
 
 
     </android.support.constraint.ConstraintLayout>
-
+<!--
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -109,5 +109,5 @@
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation"/>
-
+-->
 </LinearLayout>

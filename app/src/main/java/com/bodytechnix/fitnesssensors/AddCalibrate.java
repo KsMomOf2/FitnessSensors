@@ -12,9 +12,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class AddCalibrate extends AppCompatActivity {
-
-  private TextView mTextMessage;
   private View view;
+/*
+  private TextView mTextMessage;
 
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
           = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -36,16 +36,17 @@ public class AddCalibrate extends AppCompatActivity {
     }
 
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_add_calibrate);
-
+/*
     mTextMessage = (TextView) findViewById(R.id.message);
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     View view = (View) getWindow().findViewById(android.R.id.content);
+ */
   }
 
 public void addCalibrate(View view) {
