@@ -21,6 +21,22 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_home"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1"/>
+
             <Button
                 android:id="@+id/btnPreMade"
                 android:layout_width="125dp"
@@ -71,8 +87,6 @@
                 android:text="@string/saved"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                tools:layout_editor_absoluteX="131dp"
-                tools:layout_editor_absoluteY="257dp"
                 android:onClick="openSaved1"/>
 
             <Button
@@ -86,9 +100,7 @@
                 android:text="@string/add_device"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                tools:layout_editor_absoluteX="114dp"
-                tools:layout_editor_absoluteY="332dp"
-                android:onClick="openAddDevice"/>
+                android:onClick="openAddNewDevice"/>
 
             <Button
                 android:id="@+id/btnMetrics"
@@ -101,13 +113,36 @@
                 android:text="@string/metrics"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                tools:layout_editor_absoluteX="131dp"
-                tools:layout_editor_absoluteY="405dp"
                 android:onClick="openMetrics"/>
+
+            <FrameLayout
+                android:id="@+id/lytMenu"
+                android:layout_width="410dp"
+                android:layout_height="60dp"
+                android:elevation="1dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:background="@color/colorPrimary">
+
+                <Button
+                    android:id="@+id/btnMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Help"
+                    android:textSize="30dp"
+                    android:onClick="openHelp"/>
+
+            </FrameLayout>
+
+
         </android.support.constraint.ConstraintLayout>
 
     </FrameLayout>
-
+<!--
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -115,5 +150,6 @@
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation"/>
+        -->
 
 </LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bodytechnix.fitnesssensors.Metrics">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_home"
+            android:visibility="invisible"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtGood"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="% Good"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtImprove"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="% Improve"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtGood"/>
+
+        <TextView
+            android:id="@+id/txtWeak"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Weakness"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtImprove"/>
+
+        <TextView
+            android:id="@+id/txtStrength"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Strength"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtWeak"/>
+
+        <TextView
+            android:id="@+id/txtRecommend"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Recommended"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtStrength"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation"/>
+
+</LinearLayout>

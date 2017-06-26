@@ -32,12 +32,14 @@
             tools:layout_constraintLeft_creator="1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+
         <Button
             android:id="@+id/btnPair"
             android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="130dp"
             android:layout_marginTop="16dp"
+            android:onClick="openAddPair"
             android:text="Pair"
             android:textAllCaps="false"
             android:textSize="18sp"
@@ -54,7 +56,8 @@
             android:textAllCaps="false"
             android:textSize="18sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnPair"/>
+            app:layout_constraintTop_toBottomOf="@+id/btnPair"
+            android:onClick="openAddCalibrate"/>
 
     </android.support.constraint.ConstraintLayout>
 

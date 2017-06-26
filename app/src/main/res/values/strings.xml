@@ -21,6 +21,12 @@
     <string name="title_activity_saved1">Saved</string>
     <string name="title_activity_saved2">Mon/Wed</string>
     <string name="title_activity_saved3">Squat</string>
-    <string name="title_activity_add_device">Add Device</string>
     <string name="title_activity_add_knee_sleeve">Knee Sleeve</string>
+    <string name="title_activity_add_new_device">Add Device</string>
+    <string name="title_activity_add_pair">Pair</string>
+    <string name="title_activity_add_calibrate">Calibrate</string>
+    <string name="title_activity_metrics">Metrics</string>
+    <string name="title_activity_faqs">FAQs</string>
+    <string name="title_activity_help">Help</string>
+    <string name="action_settings">Settings</string>
 </resources>

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+  /*
   private TextView mTextMessage;
 
   private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -33,14 +34,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
   };
-
+*/
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
+/*
     BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
     navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    */
   }
 
   public void openPreMade(View view) {
@@ -59,9 +61,16 @@ public class MainActivity extends AppCompatActivity {
     Intent intent = new Intent(this, Saved1.class);
     startActivity(intent);
   }
-  public void openAddDevice(View view) {
-    Intent intent = new Intent(this, AddDevice.class);
+  public void openAddNewDevice(View view) {
+    Intent intent = new Intent(this, AddNewDevice.class);
     startActivity(intent);
   }
-
+  public void openMetrics(View view) {
+    Intent intent = new Intent(this, Metrics.class);
+    startActivity(intent);
+  }
+  public void openHelp(View view) {
+    Intent intent = new Intent(this, Help.class);
+    startActivity(intent);
+  }
 }
